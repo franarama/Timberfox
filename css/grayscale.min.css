@@ -52,8 +52,6 @@
   }
 
   #mainNav .nav-link {
-    -webkit-transition: none;
-    transition: none;
     padding: 2rem 1.5rem;
     color: rgba(255, 255, 255, .5)
   }
@@ -160,15 +158,16 @@
 
 .btn-primary {
   background-color: #f35e07;
-  font-size: 100%;
+  font-size: 80%;
 }
 
 .btn-primary:hover {
-  background-color: rgba(250, 97, 8, 0.8);
+  background-color: #d65308;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .btn-primary:focus {
-  background-color: rgb(216, 83, 6);
+  background-color: #ba4507;
 }
 
 .btn-primary:active {
@@ -176,9 +175,10 @@
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 9rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, .9)), to(rgba(22, 22, 22, .8)));
   background: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8) 100%)
+  padding-bottom: 5rem;
 }
 
 .about-section p {
@@ -315,6 +315,19 @@ a:focus, a:hover {
 }
 .bg-dark-grey {
   background-color: #1C1C1C;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: rgba(255, 255, 255, .5);
+}
+
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover {
+  color: #f35e07;
+}
+
+:hover {
+  transition: all .2s ease-in-out;
 }
 
 footer {
